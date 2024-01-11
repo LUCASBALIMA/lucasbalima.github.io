@@ -1,0 +1,7 @@
+        BOUNDARY_CONDITIONS_SLAB_CASE
+
+p_inj(kPa): 50000.0
+
+T_inj(K): 420.15
+
+CC_slab: 1.0

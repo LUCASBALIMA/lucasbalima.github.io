@@ -1,0 +1,30 @@
+                INFORMACOES_ROCHA
+
+
+Permeabilidade_em_x(microm2): 5.0e-6
+
+Permeabilidade_em_y(microm2): 5.0e-6
+
+Porosidade_inicial: 0.08
+
+Compressibilidade_rocha(kPa^-1)c_phi: 0.000000145038
+
+Compressibility_c_rho(kPa^-1)c_rho: 0.0000001
+
+Porosidade_de_referencia: 0.08
+
+Pressao_de_referencia_para_porosidade: 45000.0
+
+Temperatura_de_referencia_para_porosidade: 400.15
+
+Massa_especifica_da_rocha_rho_s(kg/m3): 3203.7
+
+Tortuosidade: 1.41
+
+cpr(kJ/(kg*K)): 1.25604
+
+Thermal_cond_Kg(W/(m*K)): 3.5
+
+coficiente_de_expansao_termica_da_rocha_verificar(1/K): 0.0000054
+
+cr_T_phi(1/K): 0.000000005

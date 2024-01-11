@@ -1,0 +1,7 @@
+                            GEOMETRIA
+
+Comprimento_direcao_x(m):                 1080.0 
+
+Comprimento_direcao_y(m):                 1080.0
+
+Comprimento_direcao_z(m):                 40

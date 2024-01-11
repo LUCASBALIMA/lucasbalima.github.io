@@ -1,0 +1,32 @@
+                PARAMETROS_PARA_FLUIDO
+
+
+Pressao_inicial(kPa): 45000.0
+
+Temperatura_inicial(K): 400.15
+
+Pressao_de_referencia(kPa): 45000.0
+
+Peso_especifico(M/Mar): 0.6
+
+Pressao_na_condicao_padrao(kPa): 101.325
+
+Temperatura_na_condicao_padrao(K): 293.15
+
+Diametro_da_molecula_de_gas: 7.0
+
+Constante_universal_dos_gases(kJ/kmol*K): 8.3161
+
+Parametro_de_Klinkenberg(kPa): 1723.7
+
+cpg(kJ/(kg*K)): 2.500
+
+Thermal_cond_Kg(W/(m*K)): 0.075
+
+Volume_de_Langmuir(m3/kg): 1.5e-1
+
+Pressao_de_Langmuir: 1100.0
+
+Eads(J/mol): -20.936
+
+K0_constant_for_Vads(p,T): 3.2288e-9

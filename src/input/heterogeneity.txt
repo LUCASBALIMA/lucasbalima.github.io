@@ -1,0 +1,17 @@
+                HETEROGENEIDADE
+
+Presente:                          0
+
+x_init:                            80
+
+x_final:                           220
+
+y_init:                            155
+
+y_final:                           165
+
+Permeabilidade_em_x(microm2):      0.0005
+
+Permeabilidade_em_y(microm2):      0.0005
+
+Porosidade_inicial:                0.20

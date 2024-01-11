@@ -1,0 +1,28 @@
+                PARAMETROS_GERAIS
+
+
+Numero_blocos_direcao_x: 185
+
+Numero_blocos_direcao_y: 185
+
+Constante_alpha_c: 1.0
+
+Constante_beta_c: 8.64e-5
+
+Tolerancia_metodo_iterativo: 1.0e-5
+
+Tolerancia_T: 1.0e-5
+
+Razao_crescimento_passo_de_tempo: 1.2
+
+Tempo_maximo_de_simulacao: 1461.0
+
+Passo_de_tempo_inicial: 0.5
+
+Passo_de_tempo_final: 5.0
+
+Passo_de_tempo_impressao: 3000.0
+
+Kap_type: 6
+
+Solution_type: 2
