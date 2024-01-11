@@ -98,7 +98,7 @@ class RockParametersWindow(QtWidgets.QMainWindow):
         threading.Thread(target=self.execute_command).start()
 
     def execute_command(self):
-        command = "gcc -o runtest main.c -march=native -fopenmp -O3 -lm" # ".\deploy.sh"
+        command = "./deploy.sh"
         subprocess.call(command, shell=True)
 
 # You can add additional code to handle other functionalities specific to the Rock GUI if needed

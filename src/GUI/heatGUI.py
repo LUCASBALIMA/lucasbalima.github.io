@@ -7,10 +7,10 @@ import subprocess
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define relative paths
-heat_temp_file = os.path.join(current_dir, "..\input\heat.txt")
-c_code_executable = os.path.join(current_dir, "\\.temp\heat")
+heat_temp_file = os.path.join(current_dir, "../input/heat.txt")
+c_code_executable = os.path.join(current_dir, "temp/heat")
 
-os.system(f"cd {current_dir}\temp && .\heat")
+os.system(f"cd {current_dir}/temp && ./heat")
 
 class HeatParametersWindow(QtWidgets.QWidget):
     def __init__(self):
@@ -55,8 +55,8 @@ class HeatParametersWindow(QtWidgets.QWidget):
 
     def load_data(self):
         # Execute the C code to generate heatTemp.txt
-        os.system(f"cd {current_dir}\temp && .\heat")
-        with open(os.path.join(current_dir, "..\GUI\temp\heatTemp.txt"), 'r') as f:
+        os.system(f"cd {current_dir}/temp && ./heat")
+        with open(os.path.join(current_dir, "../GUI/temp/heatTemp.txt"), 'r') as f:
             lines = f.readlines()
 
         num_aquecedores = None
@@ -133,7 +133,7 @@ class HeatParametersWindow(QtWidgets.QWidget):
         threading.Thread(target=self.execute_command).start()
 
     def execute_command(self):
-        command = "gcc -o runtest main.c -march=native -fopenmp -O3 -lm && .\\runtest.exe" #  ".\deploy.sh" #"wsl -d Ubuntu-20.04 -- .\runtest"
+        command = "./deploy.sh" #"wsl -d Ubuntu-20.04 -- ./runtest"
         subprocess.call(command, shell=True)
 
 if __name__ == "__main__":

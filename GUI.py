@@ -1,9 +1,9 @@
 import sys
 import os
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, QPushButton
-sys.path.append('.\src\GUI')
+sys.path.append('src/GUI')
 
-os.system(".\src\GUI\mklogo.exe")
+os.system("src/GUI/./mklogo")
 
 from generalGUI import GeneralParametersWindow
 from fluidGUI import FluidParametersWindow

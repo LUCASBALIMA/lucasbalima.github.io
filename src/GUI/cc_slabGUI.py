@@ -7,7 +7,7 @@ import subprocess
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define a relative path to the "input" directory from the script's directory
-relative_path = "..\input\CC_slab.txt"
+relative_path = "../input/CC_slab.txt"
 
 # Combine the current directory with the relative path to create the full file path
 cc_slab_file = os.path.join(current_dir, relative_path)
@@ -87,7 +87,7 @@ class CCSlabParametersWindow(QtWidgets.QMainWindow):
         threading.Thread(target=self.execute_command).start()
 
     def execute_command(self):
-        command = "gcc -o runtest main.c -march=native -fopenmp -O3 -lm && .\\runtest.exe" # ".\deploy.sh"
+        command = "./deploy.sh"
         subprocess.call(command, shell=True)
 
 

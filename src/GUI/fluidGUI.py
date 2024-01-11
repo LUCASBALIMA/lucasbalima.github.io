@@ -7,7 +7,7 @@ import subprocess
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define a relative path to the "input" directory from the script's directory
-relative_path = "..\input\\fluid.txt"
+relative_path = "../input/fluid.txt"
 
 # Combine the current directory with the relative path to create the full file path
 fluid_file = os.path.join(current_dir, relative_path)
@@ -18,17 +18,17 @@ parameters = [
     "Pressao_inicial(kPa)",
     "Temperatura_inicial(K)",
     "Pressao_de_referencia(kPa)",
-    "Peso_especifico(M\Mar)",
+    "Peso_especifico(M/Mar)",
     "Pressao_na_condicao_padrao(kPa)",
     "Temperatura_na_condicao_padrao(K)",
     "Diametro_da_molecula_de_gas",
-    "Constante_universal_dos_gases(kJ\kmol*K)",
+    "Constante_universal_dos_gases(kJ/kmol*K)",
     "Parametro_de_Klinkenberg(kPa)",
-    "cpg(kJ\(kg*K))",
-    "Thermal_cond_Kg(W\(m*K))",
-    "Volume_de_Langmuir(m3\kg)",
+    "cpg(kJ/(kg*K))",
+    "Thermal_cond_Kg(W/(m*K))",
+    "Volume_de_Langmuir(m3/kg)",
     "Pressao_de_Langmuir",
-    "Eads(J\mol)",
+    "Eads(J/mol)",
     "K0_constant_for_Vads(p,T)"
 ]
 
@@ -101,7 +101,7 @@ class FluidParametersWindow(QtWidgets.QMainWindow):
         threading.Thread(target=self.execute_command).start()
 
     def execute_command(self):
-        command = "gcc -o runtest main.c -march=native -fopenmp -O3 -lm && .\\runtest.exe" # ".\deploy.sh"
+        command = "./deploy.sh"
         subprocess.call(command, shell=True)
 
 
